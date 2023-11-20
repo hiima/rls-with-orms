@@ -1,0 +1,17 @@
+output = "models"
+pkgname = "models"
+wipe = true
+add-global-variants = true
+add-panic-variants = true
+no-tests = true
+add-enum-types = true
+
+[psql]
+dbname = "local"
+host = "localhost"
+port = 5432
+user = "postgres"
+pass = "postgres"
+schema = "public"
+sslmode = "disable"
+blacklist = ["goose_db_version"]
